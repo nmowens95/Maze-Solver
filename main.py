@@ -1,7 +1,9 @@
-from tkinter import Tk, BOTH, Canvas
+from graphics import Window, Line, Point
 
-class Window():
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
-        self.window = Tk(width, height)
+def main():
+    win = Window(800, 600)
+    l = Line(Point(50,50), Point(400, 400))
+    win.draw_line(l, "black")
+    win.wait_for_close()
+
+main()
