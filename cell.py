@@ -21,15 +21,28 @@ class Cell:
         if self.has_left_wall:
             line = Line(Point(x1, y1), Point(x1, y2))
             self.win.draw_line(line)
+        else:
+            line = Line(Point(x1, y1), Point(x1, y2))
+            self.win.draw_line(line, "white")
         if self.has_top_wall:
             line = Line(Point(x1, y1), Point(x2, y1))
             self.win.draw_line(line)
+        else:
+            line = Line(Point(x1, y1), Point(x2, y1))
+            self._win.draw_line(line, "white")
         if self.has_right_wall:
             line = Line(Point(x2, y1), Point(x2, y2))
             self.win.draw_line(line)
+        else:
+            line = Line(Point(x2, y1), Point(x2, y2))
+            self.win.draw_line(line, "white")
         if self.has_bottom_wall:
             line = Line(Point(x1, y2), Point(x2, y2))
             self.win.draw_line(line)
+        else:
+            line = Line(Point(x1, y2), Point(x2, y2))
+            self.win.draw_line(line, "white")
+
 
     def draw_move(self, to_cell, undo=False):
         if self.win is None:
@@ -43,7 +56,7 @@ class Cell:
         # use the colors to trace the change
         fill_color = "red"
         if undo:
-            fill_color = "grey"
+            fill_color = "gray"
 
         # move left
         if self.x1 > to_cell.x1:
