@@ -2,6 +2,7 @@ from graphics import Window
 from maze import Maze
 import sys
 
+
 def main():
     num_rows = 12
     num_cols = 16
@@ -22,5 +23,6 @@ def main():
     else:
         print("maze solved!")
     win.wait_for_close()
+
 
 main()

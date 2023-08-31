@@ -2,7 +2,8 @@ from cell import Cell
 import random
 import time
 
-class Maze():
+
+class Maze:
     def __init__ (
         self,
         x1,
@@ -13,8 +14,7 @@ class Maze():
         cell_size_y,
         win = None,
         seed = None
-        ):
-
+    ):
         self.cells = []
         self.x1 = x1
         self.y1 = y1
@@ -85,7 +85,7 @@ class Maze():
                 next_index_list.append((i, j - 1))
                 possible_direction_indexes += 1
             # down
-            if j < self.num_rows -1 and not self.cells[i][j + 1].visited:
+            if j < self.num_rows - 1 and not self.cells[i][j + 1].visited:
                 next_index_list.append((i, j + 1))
                 possible_direction_indexes += 1
 
@@ -126,7 +126,6 @@ class Maze():
 
     # returns True if this is the end cell, or if it leads to the end cell
     # returns false if this is a loser cell
-
     def solve_r(self, i, j):
         self.animate()
 
@@ -143,7 +142,7 @@ class Maze():
             and not self.cells[i][j].has_left_wall
             and not self.cells[i - 1][j].visited
         ):
-            self.cells[i][j].draw_move(self._cells[i - 1][j])
+            self.cells[i][j].draw_move(self.cells[i - 1][j])
             if self.solve_r(i - 1, j):
                 return True
             else:
@@ -187,7 +186,6 @@ class Maze():
 
         # we went the wrong way let the previous cell know by returning False
         return False
-
 
     # create the moves for the solution using a depth first search
     def solve(self):
