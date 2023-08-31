@@ -1,4 +1,4 @@
-from graphics import Point, Line
+from graphics import Line, Point
 
 
 class Cell:
@@ -52,8 +52,8 @@ class Cell:
         x_mid = (self.x1 + self.x2) / 2
         y_mid = (self.y1 + self.y2) / 2
         # we have our mid point, now we are going to initialize the cells we are drawing to
-        to_x_mid = (to_cell.x1 + to_cell.x2)
-        to_y_mid = (to_cell.y1 + to_cell.y2)
+        to_x_mid = (to_cell.x1 + to_cell.x2) / 2
+        to_y_mid = (to_cell.y1 + to_cell.y2) / 2
 
         # use the colors to trace the change
         fill_color = "red"
