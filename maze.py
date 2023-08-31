@@ -73,19 +73,19 @@ class Maze():
             # Need to determine which cells need to be visited next
 
             # left
-            if i > 0 and not self.cells[i-1][j].visited:
+            if i > 0 and not self.cells[i - 1][j].visited:
                 next_index_list.append((i - 1, j))
                 possible_direction_indexes += 1
             # right
-            if i < self.num_cols - 1 and not self.cells[i+1][j].visited:
+            if i < self.num_cols - 1 and not self.cells[i + 1][j].visited:
                 next_index_list.append((i + 1, j))
                 possible_direction_indexes += 1
             # up
-            if j > 0 and not self.cells[i][j-1].visited:
+            if j > 0 and not self.cells[i][j - 1].visited:
                 next_index_list.append((i, j - 1))
                 possible_direction_indexes += 1
             # down
-            if j < self.num_rows and not self.cells[i][j+1].visited:
+            if j < self.num_rows -1 and not self.cells[i][j + 1].visited:
                 next_index_list.append((i, j + 1))
                 possible_direction_indexes += 1
 
