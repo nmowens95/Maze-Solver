@@ -14,6 +14,8 @@ class Cell:
         self.win = win
 
     def draw(self, x1, y1, x2, y2):
+        if self.win is None:
+            return
         self.x1 = x1
         self.x2 = x2
         self.y1 = y1
@@ -29,7 +31,7 @@ class Cell:
             self.win.draw_line(line)
         else:
             line = Line(Point(x1, y1), Point(x2, y1))
-            self._win.draw_line(line, "white")
+            self.win.draw_line(line, "white")
         if self.has_right_wall:
             line = Line(Point(x2, y1), Point(x2, y2))
             self.win.draw_line(line)
