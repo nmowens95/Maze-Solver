@@ -1,4 +1,4 @@
-<img width="799" alt="Screenshot 2023-09-07 at 7 35 23 PM" src="https://github.com/nmowens95/Maze-Solver/assets/126295718/08d26c44-7639-4897-96e7-6f166e1e46be">
+![banner](https://github.com/nmowens95/Maze-Solver/assets/126295718/a12c545b-5ff1-40a7-b9ec-9fec5e2cdd18)
 
 # Maze Solver
 
