@@ -1,9 +1,8 @@
 ![banner](https://github.com/nmowens95/Maze-Solver/assets/126295718/a12c545b-5ff1-40a7-b9ec-9fec5e2cdd18)
 
-# Maze Solver
 
 
-This is a maze solving project that uses Python and the Tkinter library for a graphical user interface (GUI). The project uses recursion and Breadth first search algorithms in order to wave through a maze in order to solve itself.
+- This is a maze solving project that uses Python and the Tkinter library for a graphical user interface (GUI). The project uses recursion and Breadth first search algorithms in order to weave through a maze in order to solve itself.
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
