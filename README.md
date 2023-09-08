@@ -13,6 +13,8 @@ Install my-project
 
 ```bash
   git clone https://github.com/nmowens95/Maze-Solver
+```
+```bash
   pip install tk
 ```
     
